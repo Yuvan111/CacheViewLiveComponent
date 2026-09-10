@@ -1,0 +1,37 @@
+@page "/cache-view"
+@attribute [Authorize]
+@using Microsoft.AspNetCore.Authorization
+@inject IHttpContextAccessor HttpContextAccessor
+
+<PageTitle>CacheView live components</PageTitle>
+
+<div class="sample-page">
+    <header class="sample-header">
+        <div>
+            <p class="eyebrow">.NET 11 static SSR probe</p>
+            <h1>CacheView live components</h1>
+            <p>Signed in as <strong>@UserName</strong>. Reload to compare lifecycle values.</p>
+        </div>
+        <form method="post" action="/account/sign-out">
+            <button class="btn btn-outline-secondary" type="submit">Sign out</button>
+        </form>
+    </header>
+
+    <p class="request-value"><strong>Current parent request value:</strong> <code>@parentRequestValue</code></p>
+
+    <CacheView VaryByUser="true" ExpiresAfter="@TimeSpan.FromMinutes(10)">
+        <div class="probe-list" data-cache-view-probe>
+            <CacheableChild Position="1" Caption="Cacheable child A" />
+            <LiveChild Position="2" Caption="Live child A" ParentRequestValue="parentRequestValue" />
+            <LiveChild Position="3" Caption="Live child B" />
+            <CacheableChild Position="4" Caption="Cacheable child B" />
+            <StreamingChild Position="5" Caption="Streaming child" />
+        </div>
+    </CacheView>
+</div>
+
+@code {
+    private readonly Guid parentRequestValue = Guid.NewGuid();
+
+    private string UserName => HttpContextAccessor.HttpContext?.User.Identity?.Name ?? "Unknown";
+}

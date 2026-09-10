@@ -1,0 +1,20 @@
+<article class="probe-item" data-position="@Position" data-kind="cacheable">
+    <div class="probe-position">@Position</div>
+    <div>
+        <h2>@Caption</h2>
+        <dl>
+            <dt>Initialization GUID</dt>
+            <dd><code>@initializationGuid</code></dd>
+        </dl>
+    </div>
+</article>
+
+@code {
+    [Parameter, EditorRequired]
+    public string Caption { get; set; } = string.Empty;
+
+    [Parameter, EditorRequired]
+    public int Position { get; set; }
+
+    private readonly Guid initializationGuid = Guid.NewGuid();
+}

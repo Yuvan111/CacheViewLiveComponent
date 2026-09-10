@@ -1,0 +1,35 @@
+@attribute [StreamRendering]
+
+<article class="probe-item probe-item-streaming" data-position="@Position" data-kind="streaming">
+    <div class="probe-position">@Position</div>
+    <div>
+        <h2>@Caption</h2>
+        @if (initializationGuid is null)
+        {
+            <p class="streaming-status">Waiting for the delayed render...</p>
+        }
+        else
+        {
+            <dl>
+                <dt>Initialization GUID</dt>
+                <dd><code>@initializationGuid</code></dd>
+            </dl>
+        }
+    </div>
+</article>
+
+@code {
+    [Parameter, EditorRequired]
+    public string Caption { get; set; } = string.Empty;
+
+    [Parameter, EditorRequired]
+    public int Position { get; set; }
+
+    private Guid? initializationGuid;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(800);
+        initializationGuid = Guid.NewGuid();
+    }
+}

@@ -1,0 +1,37 @@
+@attribute [CacheBehavior(CacheBehavior.Rerender)]
+@inject IHttpContextAccessor HttpContextAccessor
+
+<article class="probe-item probe-item-live" data-position="@Position" data-kind="live">
+    <div class="probe-position">@Position</div>
+    <div>
+        <h2>@Caption</h2>
+        <dl>
+            <dt>Current request user</dt>
+            <dd>@UserName</dd>
+            <dt>Captured parent parameter</dt>
+            <dd><code>@(ParentRequestValue?.ToString() ?? "Not supplied")</code></dd>
+            <dt>Lifecycle GUID</dt>
+            <dd><code>@lifecycleGuid</code></dd>
+        </dl>
+    </div>
+</article>
+
+@code {
+    [Parameter, EditorRequired]
+    public string Caption { get; set; } = string.Empty;
+
+    [Parameter]
+    public Guid? ParentRequestValue { get; set; }
+
+    [Parameter, EditorRequired]
+    public int Position { get; set; }
+
+    private Guid lifecycleGuid;
+
+    private string UserName => HttpContextAccessor.HttpContext?.User.Identity?.Name ?? "Unknown";
+
+    protected override void OnInitialized()
+    {
+        lifecycleGuid = Guid.NewGuid();
+    }
+}

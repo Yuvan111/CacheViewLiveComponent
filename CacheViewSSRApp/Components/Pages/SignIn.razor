@@ -1,0 +1,18 @@
+@page "/sign-in"
+
+<PageTitle>Choose test user</PageTitle>
+
+<div class="sample-page sign-in-panel">
+    <p class="eyebrow">Identity setup</p>
+    <h1>Choose a test user</h1>
+    <p>Use a different browser profile for each identity so their cookies remain isolated.</p>
+
+    <div class="sign-in-actions">
+        <form method="post" action="/account/sign-in/alice">
+            <button class="btn btn-primary" type="submit">Sign in as Alice</button>
+        </form>
+        <form method="post" action="/account/sign-in/bob">
+            <button class="btn btn-outline-primary" type="submit">Sign in as Bob</button>
+        </form>
+    </div>
+</div>
