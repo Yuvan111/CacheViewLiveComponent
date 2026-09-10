@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/" />
+    
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css" />
+    <link rel="stylesheet" href="app.md6g3oqa20.css" />
+    <link rel="stylesheet" href="CacheViewSSRApp.m0n841ewzx.styles.css" />
+    <script type="importmap">{
+  "imports": {
+    "./Components/Layout/NavMenu.razor.js": "./Components/Layout/NavMenu.eqct9r9ewf.razor.js",
+    "./_framework/blazor.server.js": "./_framework/blazor.server.d25v7sl9u8.js",
+    "./_framework/blazor.web.js": "./_framework/blazor.web.myvqssuev4.js",
+    "./lib/bootstrap/dist/js/bootstrap.bundle.js": "./lib/bootstrap/dist/js/bootstrap.bundle.6cfz1n2cew.js",
+    "./lib/bootstrap/dist/js/bootstrap.bundle.min.js": "./lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js",
+    "./lib/bootstrap/dist/js/bootstrap.esm.min.js": "./lib/bootstrap/dist/js/bootstrap.esm.min.jj8uyg4cgr.js",
+    "./lib/bootstrap/dist/js/bootstrap.esm.js": "./lib/bootstrap/dist/js/bootstrap.esm.vr1egmr9el.js",
+    "./lib/bootstrap/dist/js/bootstrap.min.js": "./lib/bootstrap/dist/js/bootstrap.min.63fj8s7r0e.js",
+    "./lib/bootstrap/dist/js/bootstrap.js": "./lib/bootstrap/dist/js/bootstrap.notf2xhcfb.js"
+  }
+}</script>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>CacheView live components</title></head>
+
+<body><div class="page" b-figwqwfpa1><div class="sidebar" b-figwqwfpa1><script type="module" src="Components/Layout/NavMenu.eqct9r9ewf.razor.js" b-rz9gq7yhs5></script>
+
+<div class="top-row ps-3 navbar navbar-dark" b-rz9gq7yhs5><div class="container-fluid" b-rz9gq7yhs5><a class="navbar-brand" href b-rz9gq7yhs5>CacheViewSSRApp</a></div></div>
+
+<input type="checkbox" title="Navigation menu" class="navbar-toggler" b-rz9gq7yhs5>
+
+<div id="nav-scrollable" class="nav-scrollable" b-rz9gq7yhs5><nav class="nav flex-column" b-rz9gq7yhs5><div class="nav-item px-3" b-rz9gq7yhs5><a href="" class="nav-link"><span class="bi bi-house-door-fill-nav-menu" aria-hidden="true" b-rz9gq7yhs5></span> Home
+            </a></div>
+
+        <div class="nav-item px-3" b-rz9gq7yhs5><a href="weather" class="nav-link"><span class="bi bi-list-nested-nav-menu" aria-hidden="true" b-rz9gq7yhs5></span> Weather
+            </a></div>
+
+        <div class="nav-item px-3" b-rz9gq7yhs5><a href="cache-view" class="nav-link active" aria-current="page"><span class="bi bi-memory-nav-menu" aria-hidden="true" b-rz9gq7yhs5></span> CacheView probe
+            </a></div></nav></div></div>
+
+    <main b-figwqwfpa1><div class="top-row px-4" b-figwqwfpa1><a href="https://learn.microsoft.com/aspnet/core/" target="_blank" b-figwqwfpa1>About</a></div>
+
+        <article class="content px-4" b-figwqwfpa1>
+
+<div class="sample-page"><header class="sample-header"><div><p class="eyebrow">.NET 11 static SSR probe</p>
+            <h1>CacheView live components</h1>
+            <p>Signed in as <strong>Alice</strong>. Reload to compare lifecycle values.</p></div>
+        <form method="post" action="/account/sign-out"><button class="btn btn-outline-secondary" type="submit">Sign out</button></form></header>
+
+    <p class="request-value"><strong>Current parent request value:</strong> <code>86f8396d-84d5-457f-931d-475e9c19738f</code></p>
+
+    <div class="probe-list" data-cache-view-probe><article class="probe-item" data-position="1" data-kind="cacheable"><div class="probe-position">1</div>
+    <div><h2>Cacheable child A</h2>
+        <dl><dt>Initialization GUID</dt>
+            <dd><code>987661a4-7ec1-46da-9e7c-c268f8b9da98</code></dd></dl></div></article>
+            <article class="probe-item probe-item-live" data-position="2" data-kind="live"><div class="probe-position">2</div>
+    <div><h2>Live child A</h2>
+        <dl><dt>Current request user</dt>
+            <dd>Alice</dd>
+            <dt>Captured parent parameter</dt>
+            <dd><code>a42f8d61-271b-4d75-8775-1969c6c9cd2e</code></dd>
+            <dt>Initialization GUID</dt>
+            <dd><code>3da5617f-5d97-4529-9e6d-7f1f6ce995cc</code></dd>
+            <dt>Lifecycle GUID</dt>
+            <dd><code>c5c0fe2c-258c-461c-8f1d-d22721a4a92f</code></dd></dl></div></article>
+            <article class="probe-item probe-item-live" data-position="3" data-kind="live"><div class="probe-position">3</div>
+    <div><h2>Live child B</h2>
+        <dl><dt>Current request user</dt>
+            <dd>Alice</dd>
+            <dt>Captured parent parameter</dt>
+            <dd><code>a42f8d61-271b-4d75-8775-1969c6c9cd2e</code></dd>
+            <dt>Initialization GUID</dt>
+            <dd><code>fb6476c4-3b50-46c2-b13f-6e8c58fdba05</code></dd>
+            <dt>Lifecycle GUID</dt>
+            <dd><code>89f7f06e-9213-44fe-86a6-a63ea38e3e45</code></dd></dl></div></article>
+            <article class="probe-item" data-position="4" data-kind="cacheable"><div class="probe-position">4</div>
+    <div><h2>Cacheable child B</h2>
+        <dl><dt>Initialization GUID</dt>
+            <dd><code>058d8843-7b41-4a53-8ef3-0dd5831d0ba3</code></dd></dl></div></article>
+            <!--bl:25--><article class="probe-item probe-item-streaming" data-position="5" data-kind="streaming"><div class="probe-position">5</div>
+    <div><h2>Streaming child</h2><p class="streaming-status">Waiting for the delayed render...</p></div></article><!--/bl:25--></div></div></article></main></div>
+        <blazor-focus-on-navigate selector="h1"></blazor-focus-on-navigate>
+    <script src="_framework/blazor.web.myvqssuev4.js"></script></body></html><blazor-ssr><template blazor-component-id="25"><article class="probe-item probe-item-streaming" data-position="5" data-kind="streaming"><div class="probe-position">5</div>
+    <div><h2>Streaming child</h2><dl><dt>Initialization GUID</dt>
+                <dd><code>dcbca59f-d7a9-4e0d-8554-bce20c1f2adb</code></dd></dl></div></article></template><blazor-ssr-end></blazor-ssr-end></blazor-ssr>

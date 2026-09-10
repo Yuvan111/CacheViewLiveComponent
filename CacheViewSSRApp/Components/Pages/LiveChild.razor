@@ -10,6 +10,8 @@
             <dd>@UserName</dd>
             <dt>Captured parent parameter</dt>
             <dd><code>@(ParentRequestValue?.ToString() ?? "Not supplied")</code></dd>
+            <dt>Initialization GUID</dt>
+            <dd><code>@initializationGuid</code></dd>
             <dt>Lifecycle GUID</dt>
             <dd><code>@lifecycleGuid</code></dd>
         </dl>
@@ -26,6 +28,7 @@
     [Parameter, EditorRequired]
     public int Position { get; set; }
 
+    private readonly Guid initializationGuid = Guid.NewGuid();
     private Guid lifecycleGuid;
 
     private string UserName => HttpContextAccessor.HttpContext?.User.Identity?.Name ?? "Unknown";
