@@ -1,35 +1,35 @@
---- Evidence/Bob-cold.html	2026-09-10 12:52:17
-+++ Evidence/Bob-warm.html	2026-09-10 12:52:48
+--- Evidence/Bob-cold.html	2026-09-11 12:06:22
++++ Evidence/Bob-warm.html	2026-09-11 12:06:33
 @@ -47,7 +47,7 @@
              <p>Signed in as <strong>Bob</strong>. Reload to compare lifecycle values.</p></div>
          <form method="post" action="/account/sign-out"><button class="btn btn-outline-secondary" type="submit">Sign out</button></form></header>
  
--    <p class="request-value"><strong>Current parent request value:</strong> <code>393fd571-b9f1-4dde-9a1b-ade986bf3731</code></p>
-+    <p class="request-value"><strong>Current parent request value:</strong> <code>710472ea-ac93-4a61-8232-b85d09607e81</code></p>
+-    <p class="request-value"><strong>Current parent request value:</strong> <code>1e877251-bac1-41f1-99bc-2caea7905f79</code></p>
++    <p class="request-value"><strong>Current parent request value:</strong> <code>caead31e-a5c5-45ba-8653-496c78345d8d</code></p>
  
      <div class="probe-list" data-cache-view-probe><article class="probe-item" data-position="1" data-kind="cacheable"><div class="probe-position">1</div>
      <div><h2>Cacheable child A</h2>
 @@ -60,9 +60,9 @@
              <dt>Captured parent parameter</dt>
-             <dd><code>bfc18e94-16c8-436f-a6e7-f056d523afb4</code></dd>
+             <dd><code>3ac4e4d6-a709-4ea1-9e2c-234f02e9fe74</code></dd>
              <dt>Initialization GUID</dt>
--            <dd><code>ed3bed48-b0ad-4618-988e-7990a857d31a</code></dd>
-+            <dd><code>33f5784b-976e-46cc-9899-d178c8df4a7f</code></dd>
+-            <dd><code>940a2c9d-e27a-4dfd-830e-644aa43c8dae</code></dd>
++            <dd><code>a48cd91b-2744-46e9-ba3f-448e1b4fc6ab</code></dd>
              <dt>Lifecycle GUID</dt>
--            <dd><code>0e08911e-6102-4cec-83ea-0a3447b30ea9</code></dd></dl></div></article>
-+            <dd><code>aa7d90c2-4d07-4e5d-94f5-176b9e4c7fd7</code></dd></dl></div></article>
+-            <dd><code>6c881215-1ce2-4929-9547-7ec5ebd11dc2</code></dd></dl></div></article>
++            <dd><code>daa7d51a-e234-423c-9c18-d54ca3441e69</code></dd></dl></div></article>
              <article class="probe-item probe-item-live" data-position="3" data-kind="live"><div class="probe-position">3</div>
      <div><h2>Live child B</h2>
          <dl><dt>Current request user</dt>
 @@ -70,9 +70,9 @@
              <dt>Captured parent parameter</dt>
-             <dd><code>bfc18e94-16c8-436f-a6e7-f056d523afb4</code></dd>
+             <dd><code>3ac4e4d6-a709-4ea1-9e2c-234f02e9fe74</code></dd>
              <dt>Initialization GUID</dt>
--            <dd><code>eae0a4e7-229a-49e0-b92c-c1b65938937a</code></dd>
-+            <dd><code>eb0bbca2-ddbf-488a-9086-88f77a3a2959</code></dd>
+-            <dd><code>9dde4c40-ad6c-4d4f-aea6-ccaf83850e4d</code></dd>
++            <dd><code>fd3cc90c-7598-47f8-b441-889cd62e6ef7</code></dd>
              <dt>Lifecycle GUID</dt>
--            <dd><code>9442ed1d-20e5-4727-8ebe-9c72c61cb006</code></dd></dl></div></article>
-+            <dd><code>7faac70a-1b49-42ca-adf4-067becaf367e</code></dd></dl></div></article>
+-            <dd><code>0ec8c1e4-59f1-4293-98bd-dbb03d7d2949</code></dd></dl></div></article>
++            <dd><code>d53084c7-ed79-4dbf-a5f3-0d29e9463b8c</code></dd></dl></div></article>
              <article class="probe-item" data-position="4" data-kind="cacheable"><div class="probe-position">4</div>
      <div><h2>Cacheable child B</h2>
          <dl><dt>Initialization GUID</dt>
@@ -37,7 +37,7 @@
          <blazor-focus-on-navigate selector="h1"></blazor-focus-on-navigate>
      <script src="_framework/blazor.web.myvqssuev4.js"></script></body></html><blazor-ssr><template blazor-component-id="25"><article class="probe-item probe-item-streaming" data-position="5" data-kind="streaming"><div class="probe-position">5</div>
      <div><h2>Streaming child</h2><dl><dt>Initialization GUID</dt>
--                <dd><code>d08b64d3-4e66-4139-9d86-391aedb18ccf</code></dd></dl></div></article></template><blazor-ssr-end></blazor-ssr-end></blazor-ssr>
+-                <dd><code>ae15f0ba-984e-4043-92bd-6daa658bed41</code></dd></dl></div></article></template><blazor-ssr-end></blazor-ssr-end></blazor-ssr>
 \ No newline at end of file
-+                <dd><code>3020172f-dd0c-4acb-ad0e-daf64644f6be</code></dd></dl></div></article></template><blazor-ssr-end></blazor-ssr-end></blazor-ssr>
++                <dd><code>6f403e0a-4ec5-455d-bbea-efd90aa54c47</code></dd></dl></div></article></template><blazor-ssr-end></blazor-ssr-end></blazor-ssr>
 \ No newline at end of file
